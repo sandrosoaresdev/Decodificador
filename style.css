@@ -1,0 +1,108 @@
+
+* {
+    background: var(--bg);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+.logo{
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 5%;
+}
+.small-text {
+    font-size: 12px;
+    }
+
+:root {
+    --bg: #E5E5E5;
+    --texto-azul: #0A3871;
+    --mensagem-bg: white;
+    --desencriptar-bg: var (--desencriptar-bg);
+    --aviso: #495057;
+    
+}
+
+.dark-mode:root {
+    --bg: #1f0303;
+    --texto-azul: #679ee2;
+    --mensagem-bg: black;
+    --desencriptar-bg: var (--desencriptar-bg);
+    --aviso: #495057;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+.texto{
+    border: none;
+    color: var(--texto-azul);
+    margin-top: 90px;
+    text-transform: lowercase;
+
+}
+
+::placeholder {color: var(--texto-azul);}
+.texto:focus {
+    outline: none;
+
+}
+.mensagem {
+    background-color: var(--mensagem-bg);
+    background-image: url(./imagens/avatar.png);
+    background-repeat: no-repeat;
+    border:none;
+    border-radius: 24px;
+    color: var(--texto-azul);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+}
+.mensagem:focus {
+    outline: none;
+}
+.buton{
+    display: flex;
+    margin-top: 18px;
+}
+.bt-encriptar{
+    background-color: var(--texto-azul);
+    border: 1px solid var(--texto-azul);
+    border-radius: 24px;
+    color: var(--mensagem-bg);
+    cursor: pointer;
+    height: 60px;
+    width: 320px;
+}
+.bt-desencriptar{
+    background-color: var (--desencriptar-bg);
+    border: 1px solid var(--texto-azul);
+    border-radius: 24px;
+    color: var(--texto-azul);
+    cursor: pointer;
+    height: 60px;
+    width: 320px;
+    margin-left: 30px;
+    
+}
+
+.bt-copiar{
+    border: 1px solid var(--texto-azul);
+    border-radius: 24px;
+    color: var(--texto-azul);
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 402px;
+    position: absolute;
+    width: 336px;
+}
+
+.Aviso{
+    color:var(--aviso);
+    font-size:18px;
+}

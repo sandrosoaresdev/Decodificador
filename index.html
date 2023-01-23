@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <title>Criptografar</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <img class="logo" src="./imagens/logo.png" alt="Logo">
+        <p style="align-self: center;">Encriptador e desencriptador</p>
+      </div>
+        
+    <label class="small-text" for="switch">
+    <input type="checkbox" id="switch"> Modo escuro
+    </label>
+    <main>
+        <section>
+            <textarea class="texto" cols="40" rows="4" placeholder="Digite seu texto"></textarea>
+            <div class="Aviso">
+                <h6>Apenas letras minusculas e sem acento</h6>
+            </div>
+            <div class="buton">
+                <button class="bt-encriptar" onclick="btEncriptar()">Criptografar</button>
+                <button class="bt-desencriptar" onclick="btDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+            
+        <section>
+            <textarea class="mensagem" cols="20" rows="10"></textarea>
+            <button class="bt-copiar">Copiar</button>
+        </section>
+    </main>
+    <script src="back.js"></script>
+
+
+</body>
+</html>
